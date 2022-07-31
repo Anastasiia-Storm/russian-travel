@@ -1,0 +1,53 @@
+@font-face {
+  font-family: ;
+  font-style: ;
+  font-weight: ;
+  src: url();
+}
+
+.body {
+  margin: o;
+  padding: 0;
+  border: 1px solid red;
+}
+
+.page {
+  background-color: #E5E5E5;
+  border: 1px solid red;
+}
+
+.header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  margin: 28px 48px auto 48px;
+  max-width: 1184px;
+  height: 52px;
+  border: 1px solid red;
+}
+
+.header__logo {
+  width: 176px;
+  height: 52px;
+  left: 48px;
+  top: 28px;
+  border: 1px solid red;
+}
+
+.header__lang-link-ru {
+  width: 30px;
+  height: 28px;
+  left: 1155px;
+  top: 46px;
+  text-decoration: underline;
+  border: 1px solid red;
+}
+
+.header__lang-link-en {
+  width: 29px;
+  height: 28px;
+  left: 1203px;
+  top: 46px;
+  border: 1px solid red;
+}
