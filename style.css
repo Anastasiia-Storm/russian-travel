@@ -51,8 +51,16 @@
   width: 30px;
   height: 28px;
   left: 1155px;
-  top: 46px;
-  text-decoration: underline;
+  margin: 0 0 0 931px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: right;
+  text-decoration-line: underline;
+  
+  color: #FFFFFF;
   border: 1px solid red;
 }
 
@@ -61,7 +69,14 @@
   height: 28px;
   left: 1203px;
   top: 46px;
-  border: 1px solid red;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: right;
+  color: #FFFFFF;
+border: 1px solid red;
 }
 
 .lead {
@@ -70,7 +85,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 136px 148px;
+  padding: 136px 148px 0;
   max-height: 1005px;
   max-width: 984px; 
   border: 1px solid red;
@@ -84,8 +99,7 @@
   font-style: normal;
   width: 720px;
   height: 200px;
-  padding: 0 132px 0 132px;
-  margin: 0;
+  margin: 0 0 32px;
   color: #FFFFFF;
   border: 1px solid red; 
 }
@@ -98,8 +112,7 @@
   line-height: 36px;
   width: 640px;
   height: 72px;
-  margin: 0;
-  padding: 0 32px 64px 32px;
+  margin: 0 0 64px;
   color: #FFFFFF;
     border: 1px solid red;
 }
@@ -112,7 +125,6 @@
 }
 
 .lead__caption {
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   line-height: 14px;
@@ -120,24 +132,24 @@
   width: 158px;
   height: 14px;
   margin: 0;
-  padding: 8px 0;
+  padding: 8px 826px 0 0;
   letter-spacing: 1.5px;
   text-transform: uppercase; 
   color: #FFFFFF;
     border: 1px solid red;
 }
-
+  
 .intro { 
+  position: relative;
   width: 690px;
   height: 429px;
-  margin: 0 442px auto 148px;
-
+  margin: 0;
+  padding: 114px 442px 0 148px;
   color: #FFFFFF;
   border: 1px solid red;
 }
 
 .intro__title {
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 900;
   font-size: 54px;
@@ -145,33 +157,33 @@
   width: 690px;
   height: 58x;
 
-  margin: 0 auto 40px;
+  margin: 0;
   border: 1px solid red;
 }
 
 .intro__text {
   width: 690px;
   height: 208px;
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 163%;
   color: #FFFFFF;
   margin: 0;
+  overflow: hidden;
   border: 1px solid red;
 }
 
 .intro__list {
   width: 690px;
   height: 90px;
+  padding: 0;
 
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 18px;
-  margin: 33px auto 0;
+  margin: 0 auto 0;
   list-style: none;
 
   color: #FFFFFF;
@@ -197,27 +209,32 @@
 }
 
 .places {
-  margin: 2517px auto;
-  max-width: 984px;
-  max-height: 3392px;
+  padding: 92px 148px 0 148px;
+  width: 984px;
+  height: 3392px;
   border: 1px solid red;
 }
 
 .place {
   display: grid;
-  max-width: 984px;
-  max-height: 660px;
+  grid-template-columns: repeat(460px, 484px) min-content;
+  grid-template-rows: repeat(2. 330px) min-content;
+  column-gap: 40px;
+  row-gap: 48px;
+  width: 984px;
+  height: 660px;
+  margin: 0 auto 80px;
   border: 1px solid red;
 }
 
 .place__title {
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 900;
   font-size: 72px;
   line-height: 76px;
   color: #FFFFFF;
-
+  grid-column: 1;
+  grid-row: 1;
   margin: 0;
   width: 460px;
   height: 152px;
@@ -225,26 +242,54 @@
 }
 
 .place__image {
-  max-width: 460px;
-  max-height: 460px;
-  margin: 48px auto;
+  grid-column: 1;
+  grid-row: 2;
+  width: 96%;
+  margin: 0;
   border: 1px solid red;
 }
 
 .place__website {
+  width: 456px;
+  height: 46px;
+
+  grid-column: 2;
+  grid-row: 1;
   border: 1px solid red;
 }
 
-.place__paragraph {
-  font-family: 'Inter';
+.place__website__url-heading {
+  width: 456px;
+  height: 12px;
+  border: 1px solid red;
+}
+
+.place__website__link {
+  width: 456px;
+  height: 22px;
+  border: 1px solid red;
+}
+
+.paragraphs {
+  grid-column: 2;
+  grid-row: 2;
+
+  border: 1px solid red;
+}
+
+.paragraphs__place__paragraph {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 163%;
   color: #FFFFFF;
-
+  margin: 0;
 
   border: 1px solid red;
+}
+
+.paragraphs__place__paragraph:last-child {
+  margin: 27px 0 0;
 }
 
 .cover {
@@ -252,7 +297,6 @@
 }
 
 .cover__title {
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 900;
   font-size: 72px;
@@ -267,7 +311,6 @@
 }
 
 .cover__subtitle {
-  font-family: 'Inter'; 
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -307,7 +350,6 @@
 }
 
 .footer__copyright {
-  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
