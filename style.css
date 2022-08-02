@@ -1,12 +1,12 @@
 @font-face {
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   src: url(./Inter/Inter-3.19.zip);
 }
 
 @font-face {
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 900;
   src: url(./Inter/Inter-3.19.zip);
@@ -20,11 +20,11 @@
 }
 
 .page {
-  background-color: #E5E5E5;
+  background-color: #2A2C2F;
   font-family: 'Inter', 'Areal', sans-serif;
   font-style: normal;
   max-width: 1280px;
-  margin: auto;
+  margin: 0 auto;
   border: 1px solid red;
 }
 
@@ -33,9 +33,9 @@
   position: relative;
   align-items: center;
   justify-content: space-between;
-  margin: 28px 48px auto 48px;
+  margin: 28px 48px auto;
   max-width: 1184px;
-  height: 52px;
+  max-height: 52px;
   border: 1px solid red;
 }
 
@@ -65,9 +65,14 @@
 }
 
 .lead {
-  margin: 136px 148px auto 148px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 136px 148px;
   max-height: 1005px;
-  max-width: 984; 
+  max-width: 984px; 
   border: 1px solid red;
 }
 
@@ -79,9 +84,10 @@
   font-style: normal;
   width: 720px;
   height: 200px;
-  margin: 0 auto;
+  padding: 0 132px 0 132px;
+  margin: 0;
   color: #FFFFFF;
-    border: 1px solid red;
+  border: 1px solid red; 
 }
 
 .lead__subtitle {
@@ -92,8 +98,8 @@
   line-height: 36px;
   width: 640px;
   height: 72px;
-  padding: 0;
-  margin: 32px auto;
+  margin: 0;
+  padding: 0 32px 64px 32px;
   color: #FFFFFF;
     border: 1px solid red;
 }
@@ -101,19 +107,215 @@
 .lead__image {
   max-width: 984px;
   max-height: 615px;
-  margin: 0 auto;
+  padding: 0;
     border: 1px solid red;
 }
 
 .lead__caption {
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 10px;
   line-height: 14px;
+  font-size: 10px;
   width: 158px;
   height: 14px;
+  margin: 0;
+  padding: 8px 0;
   letter-spacing: 1.5px;
   text-transform: uppercase; 
   color: #FFFFFF;
     border: 1px solid red;
 }
+
+.intro { 
+  width: 690px;
+  height: 429px;
+  margin: 0 442px auto 148px;
+
+  color: #FFFFFF;
+  border: 1px solid red;
+}
+
+.intro__title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 58px;
+  width: 690px;
+  height: 58x;
+
+  margin: 0 auto 40px;
+  border: 1px solid red;
+}
+
+.intro__text {
+  width: 690px;
+  height: 208px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 163%;
+  color: #FFFFFF;
+  margin: 0;
+  border: 1px solid red;
+}
+
+.intro__list {
+  width: 690px;
+  height: 90px;
+
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  margin: 33px auto 0;
+  list-style: none;
+
+  color: #FFFFFF;
+  border: 1px solid red;
+}
+
+.photo-grid {
+  width: 1184px;
+  height: 671px;
+  margin: 92px 48px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 16px;
+  max-width: 90%;
+  border: 1px solid red;
+}
+
+.photo-grid__item {
+  max-width: 284px;
+  max-height: 213px;
+  border: 1px solid red;
+}
+
+.places {
+  margin: 2517px auto;
+  max-width: 984px;
+  max-height: 3392px;
+  border: 1px solid red;
+}
+
+.place {
+  display: grid;
+  max-width: 984px;
+  max-height: 660px;
+  border: 1px solid red;
+}
+
+.place__title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+  color: #FFFFFF;
+
+  margin: 0;
+  width: 460px;
+  height: 152px;
+  border: 1px solid red;
+}
+
+.place__image {
+  max-width: 460px;
+  max-height: 460px;
+  margin: 48px auto;
+  border: 1px solid red;
+}
+
+.place__website {
+  border: 1px solid red;
+}
+
+.place__paragraph {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 163%;
+  color: #FFFFFF;
+
+
+  border: 1px solid red;
+}
+
+.cover {
+  border: 1px solid red;
+}
+
+.cover__title {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 76px;
+
+  text-align: center;
+  color: #FFFFFF;
+
+  max-width: 560px;
+  max-height: 152px;
+  border: 1px solid red;
+}
+
+.cover__subtitle {
+  font-family: 'Inter'; 
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+
+  color: #FFFFFF;
+
+  max-width: 360px;
+  max-height: 66px;
+  border: 1px solid red;
+}
+
+.cover__overlay {
+  border: 1px solid red;
+}
+
+.cover__background {
+  width: 100%;
+  object-fit: cover;
+  background-image: url(./images/sprint-3-images/cover-trains.jpg);
+  background-repeat: no-repeat;
+  z-index: 1;
+  border: 1px solid red;
+}
+
+.footer {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid red;
+}
+
+.footer__link {
+  border: 1px solid red;
+}
+
+.footer__copyright {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+
+  text-align: right;
+  color: #FFFFFF;
+
+ 
+  border: 1px solid red;
+} 
