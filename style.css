@@ -24,7 +24,17 @@
   font-family: 'Inter', 'Areal', sans-serif;
   font-style: normal;
   max-width: 1280px;
+  min-height: 6875px;
   margin: 0 auto;
+
+  /*Сглаживание шрифтов*/
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale; 
+ 
+  /*Подгонка размера текста*/
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%; 
   border: 1px solid red;
 }
 
@@ -85,7 +95,7 @@ border: 1px solid red;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 136px 148px 0;
+  padding: 56px 148px 0;
   max-height: 1005px;
   max-width: 984px; 
   border: 1px solid red;
@@ -98,7 +108,7 @@ border: 1px solid red;
   line-height: 100px;
   font-style: normal;
   width: 720px;
-  height: 200px;
+  height: 200px; 
   margin: 0 0 32px;
   color: #FFFFFF;
   border: 1px solid red; 
@@ -118,8 +128,7 @@ border: 1px solid red;
 }
 
 .lead__image {
-  max-width: 984px;
-  max-height: 615px;
+  width: 100%;
   padding: 0;
     border: 1px solid red;
 }
@@ -144,7 +153,7 @@ border: 1px solid red;
   width: 690px;
   height: 429px;
   margin: 0;
-  padding: 114px 442px 0 148px;
+  padding: 92px 442px 92px 148px;
   color: #FFFFFF;
   border: 1px solid red;
 }
@@ -157,19 +166,19 @@ border: 1px solid red;
   width: 690px;
   height: 58x;
 
-  margin: 0;
+  margin: 0 0 40px;
   border: 1px solid red;
 }
 
 .intro__text {
   width: 690px;
-  height: 208px;
+  min-height: 208px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 163%;
   color: #FFFFFF;
-  margin: 0;
+  margin: 0 0 33px;
   overflow: hidden;
   border: 1px solid red;
 }
@@ -193,7 +202,7 @@ border: 1px solid red;
 .photo-grid {
   width: 1184px;
   height: 671px;
-  margin: 92px 48px auto;
+  margin: 0 48px auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -211,7 +220,7 @@ border: 1px solid red;
 .places {
   padding: 92px 148px 0 148px;
   width: 984px;
-  height: 3392px;
+  min-height: 3392px;
   border: 1px solid red;
 }
 
@@ -225,6 +234,10 @@ border: 1px solid red;
   height: 660px;
   margin: 0 auto 80px;
   border: 1px solid red;
+}
+
+.place:last-child {
+ margin-bottom: 0;
 }
 
 .place__title {
@@ -252,7 +265,7 @@ border: 1px solid red;
 .place__website {
   width: 456px;
   height: 46px;
-
+  margin: 106px 0 0;
   grid-column: 2;
   grid-row: 1;
   border: 1px solid red;
@@ -261,12 +274,35 @@ border: 1px solid red;
 .place__website__url-heading {
   width: 456px;
   height: 12px;
+  margin: 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+
+  letter-spacing: 2px;
+
+  color: #AAAAAA;
+
+
   border: 1px solid red;
 }
 
 .place__website__link {
+  display: inline-block;
   width: 456px;
   height: 22px;
+  padding: 12px 0 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+
+  text-decoration-line: underline;
+
+  color: #FFFFFF;
   border: 1px solid red;
 }
 
@@ -284,15 +320,14 @@ border: 1px solid red;
   line-height: 163%;
   color: #FFFFFF;
   margin: 0;
-
   border: 1px solid red;
 }
 
-.paragraphs__place__paragraph:last-child {
-  margin: 27px 0 0;
-}
-
 .cover {
+  position: relative;
+  min-height: 740px;
+  min-width: 1184px;
+  padding: 92px 48px;
   border: 1px solid red;
 }
 
@@ -304,7 +339,7 @@ border: 1px solid red;
 
   text-align: center;
   color: #FFFFFF;
-
+  margin: 245px auto 0;
   max-width: 560px;
   max-height: 152px;
   border: 1px solid red;
@@ -316,7 +351,7 @@ border: 1px solid red;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
-
+  margin: 32px auto;
   color: #FFFFFF;
 
   max-width: 360px;
@@ -334,6 +369,8 @@ border: 1px solid red;
   background-image: url(./images/sprint-3-images/cover-trains.jpg);
   background-repeat: no-repeat;
   z-index: 1;
+  width: 1184px;
+  height: 740px;
   border: 1px solid red;
 }
 
@@ -342,10 +379,20 @@ border: 1px solid red;
   position: relative;
   align-items: center;
   justify-content: space-between;
+  padding: 0 48px 24px 48px;
+  width: 1184px;
+  height: 18px;
   border: 1px solid red;
 }
 
 .footer__link {
+  font-style: normal;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  margin-right: 24px;
+  color: #FFFFFF;
   border: 1px solid red;
 }
 
