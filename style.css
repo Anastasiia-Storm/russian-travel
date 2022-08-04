@@ -332,6 +332,7 @@ border: 1px solid red;
 }
 
 .cover__title {
+  position: absolute;
   font-style: normal;
   font-weight: 900;
   font-size: 72px;
@@ -339,19 +340,20 @@ border: 1px solid red;
 
   text-align: center;
   color: #FFFFFF;
-  margin: 245px auto 0;
+  margin: 245px 312px 0;
   max-width: 560px;
   max-height: 152px;
   border: 1px solid red;
 }
 
 .cover__subtitle {
+  position: absolute;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
-  margin: 32px auto;
+  margin: 429px 412px;
   color: #FFFFFF;
 
   max-width: 360px;
@@ -404,7 +406,6 @@ border: 1px solid red;
 
   text-align: right;
   color: #FFFFFF;
-
- 
+  margin-left: auto;
   border: 1px solid red;
 } 
