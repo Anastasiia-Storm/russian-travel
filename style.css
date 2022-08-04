@@ -164,8 +164,10 @@ border: 1px solid red;
   font-size: 54px;
   line-height: 58px;
   width: 690px;
-  height: 58x;
+  height: 58px;
 
+
+  color: #FFFFFF;
   margin: 0 0 40px;
   border: 1px solid red;
 }
@@ -306,6 +308,10 @@ border: 1px solid red;
   border: 1px solid red;
 }
 
+.place__website__link:hover {
+  opacity: 0.8;
+}
+
 .paragraphs {
   grid-column: 2;
   grid-row: 2;
@@ -319,8 +325,12 @@ border: 1px solid red;
   font-size: 18px;
   line-height: 163%;
   color: #FFFFFF;
-  margin: 0;
+  margin: 0 0 26px;
   border: 1px solid red;
+}
+
+.paragraphs__place__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .cover {
@@ -362,12 +372,13 @@ border: 1px solid red;
 }
 
 .cover__overlay {
+  opacity: 0.3;
   border: 1px solid red;
 }
 
 .cover__background {
   width: 100%;
-  object-fit: cover;
+  background-size: cover;
   background-image: url(./images/sprint-3-images/cover-trains.jpg);
   background-repeat: no-repeat;
   z-index: 1;
@@ -396,6 +407,10 @@ border: 1px solid red;
   margin-right: 24px;
   color: #FFFFFF;
   border: 1px solid red;
+}
+
+.footer__link:hover {
+  opacity: 0.8;
 }
 
 .footer__copyright {
