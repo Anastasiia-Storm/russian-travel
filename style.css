@@ -20,11 +20,14 @@
 }
 
 .page {
-  background-color: #2A2C2F;
-  font-family: 'Inter';
+  font-family: 'Inter', 'Areal', sans-serif;
   font-style: normal;
+
+  background-color: #2A2C2F;
+
   max-width: 1280px;
   min-height: 6875px;
+
   margin: 0 auto;
 
   /*Сглаживание шрифтов*/
@@ -43,49 +46,51 @@
   position: relative;
   align-items: center;
   justify-content: space-between;
-  margin: 28px 48px auto;
+
   max-width: 1184px;
-  max-height: 52px;
+  min-height: 52px;
+
+  padding: 28px 48px 0 48px;
   border: 1px solid red;
 }
 
 .header__logo {
   width: 176px;
   height: 52px;
-  left: 48px;
-  top: 28px;
   border: 1px solid red;
 }
 
 .header__lang-link-ru {
-  width: 30px;
-  height: 28px;
-  left: 1155px;
-  margin: 0 0 0 931px;
-
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.16;
+  /* line-height делю на font-size */
   text-align: right;
   text-decoration-line: underline;
-  
   color: #FFFFFF;
+
+  width: 30px;
+  height: 28px;
+
+  margin: 0;
+  margin-left: auto;
   border: 1px solid red;
 }
 
 .header__lang-link-en {
-  width: 29px;
-  height: 28px;
-  left: 1203px;
-  top: 46px;
-
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.16;
   text-align: right;
+
   color: #FFFFFF;
+
+  width: 29px;
+  height: 28px;
+
+  margin: auto 0 auto 18px;
 border: 1px solid red;
 }
 
@@ -95,22 +100,26 @@ border: 1px solid red;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 56px 148px 0;
-  max-height: 1005px;
+
+  min-height: 1005px;
   max-width: 984px; 
+
+  padding: 56px 148px 0;
   border: 1px solid red;
 }
 
 .lead__title {
   text-align: center;
-  font-size: 96px;
   font-weight: 900;
-  line-height: 100px;
+  font-size: 96px;
+  line-height: 1.04;
   font-style: normal;
+  color: #FFFFFF;
+
   width: 720px;
   height: 200px; 
+
   margin: 0 0 32px;
-  color: #FFFFFF;
   border: 1px solid red; 
 }
 
@@ -119,42 +128,47 @@ border: 1px solid red;
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
-  line-height: 36px;
+  line-height: 1.2;
+  color: #FFFFFF;
+
   width: 640px;
   height: 72px;
+
   margin: 0 0 64px;
-  color: #FFFFFF;
     border: 1px solid red;
 }
 
 .lead__image {
   width: 100%;
-  padding: 0;
     border: 1px solid red;
 }
 
 .lead__caption {
   font-style: normal;
   font-weight: 400;
-  line-height: 14px;
   font-size: 10px;
-  width: 158px;
-  height: 14px;
-  margin: 0;
-  padding: 8px 826px 0 0;
+  line-height: 1.4;
   letter-spacing: 1.5px;
   text-transform: uppercase; 
   color: #FFFFFF;
+
+  width: 158px;
+  height: 14px;
+
+  margin-right: auto;
     border: 1px solid red;
 }
   
 .intro { 
   position: relative;
-  width: 690px;
-  height: 429px;
+
+  color: #FFFFFF;
+
+  max-width: 690px;
+  min-height: 429px;
+
   margin: 0;
   padding: 92px 442px 92px 148px;
-  color: #FFFFFF;
   border: 1px solid red;
 }
 
@@ -162,54 +176,57 @@ border: 1px solid red;
   font-style: normal;
   font-weight: 900;
   font-size: 54px;
-  line-height: 58px;
+  line-height: 1.07;
+  color: #FFFFFF;
+
   width: 690px;
   height: 58px;
 
-
-  color: #FFFFFF;
   margin: 0 0 40px;
   border: 1px solid red;
 }
 
 .intro__text {
-  width: 690px;
-  min-height: 208px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 163%;
+  line-height: 1.62;
   color: #FFFFFF;
+
+  width: 690px;
+  min-height: 208px;
+
   margin: 0 0 33px;
-  overflow: hidden;
   border: 1px solid red;
 }
 
 .intro__list {
-  width: 690px;
-  height: 90px;
-  padding: 0;
-
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
-  line-height: 18px;
+  line-height: 1.5;
   margin: 0 auto 0;
   list-style: none;
-
   color: #FFFFFF;
+
+  width: 690px;
+  height: 90px;
+
+  padding: 0;
   border: 1px solid red;
 }
 
 .photo-grid {
-  width: 1184px;
-  height: 671px;
-  margin: 0 48px auto;
   display: grid;
+  /* repeat(auto-fit, minmax(300px, max-content) */
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 16px;
-  max-width: 90%;
+
+  width: 1184px;
+  height: 671px;
+
+  padding: 0 48px 0 48px;
   border: 1px solid red;
 }
 
@@ -220,9 +237,10 @@ border: 1px solid red;
 }
 
 .places {
-  padding: 92px 148px 0 148px;
-  width: 984px;
+  max-width: 984px;
   min-height: 3392px;
+
+  padding: 92px 148px 0 148px;
   border: 1px solid red;
 }
 
@@ -232,8 +250,10 @@ border: 1px solid red;
   grid-template-rows: repeat(2. 330px) min-content;
   column-gap: 40px;
   row-gap: 48px;
-  width: 984px;
-  height: 660px;
+
+  max-width: 984px;
+  min-height: 660px;
+
   margin: 0 auto 80px;
   border: 1px solid red;
 }
@@ -246,65 +266,69 @@ border: 1px solid red;
   font-style: normal;
   font-weight: 900;
   font-size: 72px;
-  line-height: 76px;
+  line-height: 1.05;
   color: #FFFFFF;
+
   grid-column: 1;
   grid-row: 1;
-  margin: 0;
+
   width: 460px;
   height: 152px;
+
+  margin: 0;
   border: 1px solid red;
 }
 
 .place__image {
   grid-column: 1;
   grid-row: 2;
-  width: 96%;
+
+  width: 100%;
+
   margin: 0;
   border: 1px solid red;
 }
 
 .place__website {
-  width: 456px;
-  height: 46px;
-  margin: 106px 0 0;
   grid-column: 2;
   grid-row: 1;
+
+  width: 456px;
+  height: 46px;
+
+  margin: 106px 0 0;
   border: 1px solid red;
 }
 
 .place__website__url-heading {
-  width: 456px;
-  height: 12px;
-  margin: 0;
-
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 12px;
-
+  line-height: 1;
   letter-spacing: 2px;
-
   color: #AAAAAA;
 
+  width: 456px;
+  height: 12px;
 
+  margin: 0;
   border: 1px solid red;
 }
 
 .place__website__link {
   display: inline-block;
-  width: 456px;
-  height: 22px;
-  padding: 12px 0 0;
 
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 22px;
-
+  line-height: 1.22;
   text-decoration-line: underline;
-
   color: #FFFFFF;
+
+  width: 456px;
+  height: 22px;
+
+  padding: 12px 0 0;
   border: 1px solid red;
 }
 
@@ -315,7 +339,8 @@ border: 1px solid red;
 .paragraphs {
   grid-column: 2;
   grid-row: 2;
-
+  
+  max-width: 484px;
   border: 1px solid red;
 }
 
@@ -323,8 +348,9 @@ border: 1px solid red;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 163%;
+  line-height: 1.61;
   color: #FFFFFF;
+
   margin: 0 0 26px;
   border: 1px solid red;
 }
@@ -335,10 +361,35 @@ border: 1px solid red;
 
 .cover {
   position: relative;
+
+  max-width: 1184px;
   min-height: 740px;
-  min-width: 1184px;
+
   padding: 92px 48px;
   border: 1px solid red;
+}
+
+.cover::before {
+  content: "";
+  position: absolute;
+
+  opacity: 0.3;
+
+  background: #2A2C2F;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+  /* От 1024px до бесконечности */
+@media screen and (min-width: 1024px) {
+  /* Стили для hover нужны только для desktop */
+  .cover:hover::before {
+    opacity: 0.8;
+
+    background: #2A2C2F;
+  }
 }
 
 .cover__title {
@@ -346,49 +397,40 @@ border: 1px solid red;
   font-style: normal;
   font-weight: 900;
   font-size: 72px;
-  line-height: 76px;
-
+  line-height: 1.05;
   text-align: center;
   color: #FFFFFF;
-  margin: 245px 312px 0;
+
   max-width: 560px;
-  max-height: 152px;
+  min-height: 152px;
+
+  margin: 245px 312px 0;
   border: 1px solid red;
 }
 
 .cover__subtitle {
   position: absolute;
+
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 1.22;
   text-align: center;
-  margin: 429px 412px;
   color: #FFFFFF;
 
   max-width: 360px;
-  max-height: 66px;
-  border: 1px solid red;
-}
+  min-height: 66px;
 
-.cover__overlay {
-  opacity: 0.3;
-  background: #2A2C2F;
+  margin: 429px 412px;
   border: 1px solid red;
-}
-
-.cover__overlay:hover {
-  opacity: 0.8;
-  background: #2A2C2F;
 }
 
 .cover__background {
-  width: 100%;
   background-size: cover;
   background-image: url(./images/sprint-3-images/cover-trains.jpg);
   background-repeat: no-repeat;
-  z-index: 1;
-  width: 1184px;
+
+  width: 100%;
   height: 740px;
   border: 1px solid red;
 }
@@ -398,9 +440,11 @@ border: 1px solid red;
   position: relative;
   align-items: center;
   justify-content: space-between;
+
+  max-width: 1184px;
+  min-height: 18px;
+
   padding: 0 48px 24px 48px;
-  width: 1184px;
-  height: 18px;
   border: 1px solid red;
 }
 
@@ -409,7 +453,7 @@ border: 1px solid red;
   text-decoration: none;
   font-weight: 400;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 1.12;
   margin-right: 24px;
   color: #FFFFFF;
   border: 1px solid red;
@@ -423,10 +467,132 @@ border: 1px solid red;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 16px;
-
+  line-height: 1.14;
   text-align: right;
   color: #FFFFFF;
+
   margin-left: auto;
   border: 1px solid red;
 } 
+
+@media screen and (max-width: 1024px) {
+  .header {
+    max-width: 928px;
+    min-height: 52px;
+  }
+
+  .lead {
+    max-width: 928px;
+    min-height: 962px;
+    
+    padding: 48px 48px 0;
+  }
+
+  .intro {
+    padding: 92px 286px 92px 48px;
+  }
+
+  .photo-grid {
+    Надо дописать свойства мин макс и афто фит или фил
+    width: 928px;
+    height: 942px;
+  }
+
+  .photo-grid__item {
+    max-width: 300px;
+    min-height: 225px;
+  }
+
+  .places {
+    max-width: 928px;
+    min-height: 3292px;
+  
+    padding: 92px 48px 0 48px;
+  }
+
+  .place__title {
+    width: 440px;
+    height: 152px;
+  }
+
+  .paragraphs { 
+    width: 456px;
+  }
+
+  .cover {
+    max-width: 1024px;
+    min-height: 640px;
+
+    padding: 0;
+  }
+
+  .cover__title исправить
+
+  .footer {
+    max-width: 928px;
+    min-height: 18px;
+  
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    max-width: 928px;
+    min-height: 52px;
+  }
+
+  .lead {
+    max-width: 928px;
+    min-height: 962px;
+    
+    padding: 48px 48px 0;
+  }
+
+  .intro {
+    padding: 92px 286px 92px 48px;
+  }
+
+  .photo-grid {
+    Надо дописать свойства мин макс и афто фит или фил
+    width: 928px;
+    height: 942px;
+  }
+
+  .photo-grid__item {
+    max-width: 300px;
+    max-height: 225px;
+  }
+
+  .places {
+    max-width: 928px;
+    min-height: 3292px;
+  
+    padding: 92px 48px 0 48px;
+  }
+
+  .place__title {
+    width: 440px;
+    height: 152px;
+  }
+
+  .paragraphs { 
+    width: 456px;
+  }
+
+  .cover {
+    max-width: 1024px;
+    min-height: 640px;
+
+    padding: 0;
+  }
+
+  .cover__title исправить
+
+  .footer {
+    max-width: 928px;
+    min-height: 18px;
+  
+  }
+
+}
