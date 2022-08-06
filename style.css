@@ -488,6 +488,10 @@ border: 1px solid red;
     padding: 48px 48px 0;
   }
 
+  .lead__subtitle {
+    margin: 0 0 56px;
+  }
+
   .intro {
     padding: 92px 286px 92px 48px;
   }
@@ -506,8 +510,16 @@ border: 1px solid red;
   .places {
     max-width: 928px;
     min-height: 3292px;
-  
+   
     padding: 92px 48px 0 48px;
+  }
+
+  .place {
+    column-gap: 32px;
+    row-gap: 48px;
+
+    max-width: 928px;
+    min-height: 640px;
   }
 
   .place__title {
@@ -523,7 +535,7 @@ border: 1px solid red;
     max-width: 1024px;
     min-height: 640px;
 
-    padding: 0;
+    padding: 92px 0 92px 0;
   }
 
   .cover__title исправить
@@ -531,68 +543,267 @@ border: 1px solid red;
   .footer {
     max-width: 928px;
     min-height: 18px;
-  
   }
-
 }
 
 @media screen and (max-width: 768px) {
   .header {
-    max-width: 928px;
+    max-width: 720px;
     min-height: 52px;
+
+    padding: 28px 24px 0 24px;
   }
 
   .lead {
-    max-width: 928px;
-    min-height: 962px;
+    max-width: 768px;
+    min-height: 862px;
     
-    padding: 48px 48px 0;
+    padding: 48px 24px 0;
+  }
+
+  .lead__subtitle {
+    margin: 0 0 56px;
   }
 
   .intro {
-    padding: 92px 286px 92px 48px;
+    padding: 88px 24px 88px 24px;
+  }
+
+  .intro__title {
+    width: 720;
+    height: 58;
+  }
+
+  .intro__text {
+    width: 720px;
+    min-height: 208px;
+  }
+
+  .intro__list {
+    width: 720px;
+    height: 90px;
   }
 
   .photo-grid {
     Надо дописать свойства мин макс и афто фит или фил
-    width: 928px;
-    height: 942px;
+    max-width: 720px;
+    min-height: 1664px;
   }
 
   .photo-grid__item {
-    max-width: 300px;
-    max-height: 225px;
+    max-width: 352px;
+    min-height: 264px;
   }
 
   .places {
-    max-width: 928px;
-    min-height: 3292px;
+    max-width: 720px;
+    min-height: 2808px;
+
+    padding: 88px 24px 0 24px;
+  }
   
-    padding: 92px 48px 0 48px;
+  .place {
+    column-gap: 28px;
+    row-gap: 48px;
+
+    max-width: 720px;
+    min-height: 581px;
   }
 
   .place__title {
-    width: 440px;
-    height: 152px;
+    font-size: 42px;
+    line-height: 1.09;
+
+    width: 340px;
+    height: 92px;
+  }
+  .place__website__url-heading {
+    width: 352px;
+    height: 12px;
+  }
+
+  .place__website__link {
+    width: 352px;
+    height: 22px;
   }
 
   .paragraphs { 
-    width: 456px;
+    width: 352px;
+  }
+
+  .paragraphs__place__paragraph {
+    font-size: 16px;
   }
 
   .cover {
-    max-width: 1024px;
-    min-height: 640px;
+    max-width: 768px;
+    min-height: 480px;
 
-    padding: 0;
+    padding: 90px 0 88px 0;
   }
 
-  .cover__title исправить
+  .cover__title {
+    исправить
+  }
 
   .footer {
-    max-width: 928px;
+    max-width: 720x;
     min-height: 18px;
-  
+
+    padding: 0 24px 24px 24px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header {
+    max-width: 288px;
+    min-height: 42px;
+
+    padding: 16px 16px 0 16px;
   }
 
+  .header__logo {
+    width: 142px;
+    height: 42px;
+  }
+
+  .header__lang-link-ru {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+  
+  .header__lang-link-en {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+
+  .lead {
+    max-width: 320px;
+    min-height: 406px;
+    
+    padding: 48px 2px 0;
+  }
+
+  .lead__title {
+    font-size: 40px;
+    line-height: 1.1;
+
+    width: 288px;
+    height: 88px; 
+  
+    margin: 0 0 16px;
+    border: 1px solid red; 
+  }
+  
+  .lead__subtitle {
+    font-size: 16px;
+    line-height: 1.25;
+  
+    width: 288px;
+    height: 40px;
+
+    margin: 0 0 40px;
+  }
+
+  .intro {
+    padding: 64px 16px 64px 16px;
+  }
+
+  .intro__title {
+    font-size: 32px;
+    line-height: 1.09;
+
+    width: 288;
+    height: 70;
+  }
+
+  .intro__text {
+    width: 288px;
+    min-height: 520px;
+  }
+
+  .intro__list {
+    width: 288px;
+    height: 90px;
+  }
+
+  .photo-grid {
+    Надо дописать свойства мин макс и афто фит или фил
+    max-width: 288px;
+    min-height: 2724px;
+  }
+
+  .photo-grid__item {
+    max-width: 288px;
+    min-height: 216px;
+  }
+
+  .places {
+    display: grid;
+    max-width: 320px;
+    min-height: 5177px;
+
+    column-gap: 28px;
+    row-gap: 48px;
+    padding: 64px 0 0 0;
+  }
+
+  .place {
+    max-width: 320px;
+    min-height: 1042px;
+  }
+
+  .place__title {
+    font-size: 32px;
+    line-height: 1.09;
+
+    width: 288px;
+    height: 35px;
+  }
+
+  .place__website__url-heading {
+    width: 288px;
+    height: 12px;
+  }
+
+  .place__website__link {
+    width: 288px;
+    height: 22px;
+  }
+
+  .paragraphs { 
+    width: 288px;
+  }
+
+  .paragraphs__place__paragraph {
+    font-size: 16px;
+  }
+
+  .cover {
+    max-width: 320px;
+    min-height: 200px;
+
+    padding: 66px 0 64px 0;
+  }
+
+  .cover__title {
+    исправить
+  }
+  
+  .footer {
+    max-width: 186x;
+    min-height: 310px;
+
+    padding: 0 118px 24px 16px;
+  }
+
+  .footer__link {
+    font-size: 24px;
+    line-height: 1;
+  }
+
+  .footer__copyright {
+    font-size: 14px;
+    line-height: 1;
+  }
 }
