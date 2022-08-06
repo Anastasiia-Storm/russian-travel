@@ -2,14 +2,14 @@
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  src: url(./Inter/Inter-3.19.zip);
+  src: url(./vendor/Inter/Inter/Inter-Regular.woff) format('woff');
 }
 
 @font-face {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 900;
-  src: url(./Inter/Inter-3.19.zip);
+  src: url(./vendor/Inter/Inter/Inter-Black.woff) format('woff');
 }
   
 
@@ -21,7 +21,7 @@
 
 .page {
   background-color: #2A2C2F;
-  font-family: 'Inter', 'Areal', sans-serif;
+  font-family: 'Inter';
   font-style: normal;
   max-width: 1280px;
   min-height: 6875px;
@@ -373,7 +373,13 @@ border: 1px solid red;
 
 .cover__overlay {
   opacity: 0.3;
+  background: #2A2C2F;
   border: 1px solid red;
+}
+
+.cover__overlay:hover {
+  opacity: 0.8;
+  background: #2A2C2F;
 }
 
 .cover__background {
