@@ -1,0 +1,33 @@
+.cover {
+  position: relative;
+  
+  max-width: 100%;
+  min-height: 740px;
+  
+  padding: 92px 48px;
+  border: 1px solid red;
+}
+
+.cover::before {
+    content: "";
+    position: absolute;
+  
+    opacity: 0.3;
+  
+    background: #2A2C2F;
+  
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+    /* От 1024px до бесконечности */
+  @media screen and (min-width: 1024px) {
+    /* Стили для hover нужны только для desktop */
+    .cover:hover::before {
+      opacity: 0.8;
+  
+      background: #2A2C2F;
+    }
+  }
+  

@@ -1,0 +1,28 @@
+.body {
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+}
+
+.page {
+  font-family: 'Inter', 'Areal', sans-serif;
+  font-style: normal;
+  
+  background-color: #2A2C2F;
+  
+  max-width: 1280px;
+  min-height: 6875px;
+  
+  margin: 0 auto;
+  
+  /*Сглаживание шрифтов*/
+  -webkit-font-smoothing: antialiased; 
+  -moz-osx-font-smoothing: grayscale; 
+   
+  /*Подгонка размера текста*/
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%; 
+  border: 1px solid red;
+}
+  

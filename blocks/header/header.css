@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  
+  max-width: 100%;
+  min-height: 52px;
+  
+  padding: 28px 48px 0 48px;
+  border: 1px solid red;
+}
+  
+@media screen and (max-width: 1024px) {
+  .header {
+    max-width: 100%;
+    min-height: 52px;
+  }
+}

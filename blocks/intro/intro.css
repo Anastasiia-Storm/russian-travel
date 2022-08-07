@@ -1,0 +1,12 @@
+.intro { 
+  position: relative;
+  
+  color: #FFFFFF;
+  
+  max-width: 690px;
+  min-height: 429px;
+  
+  margin: 0;
+  padding: 92px 442px 92px 148px;
+  border: 1px solid red;
+}

@@ -1,0 +1,20 @@
+.place__website_link {
+  display: inline-block;
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+  
+  width: 456px;
+  height: 22px;
+  
+  padding: 12px 0 0;
+  border: 1px solid red;
+}
+
+.place__website_link:hover {
+  opacity: 0.8;
+}
