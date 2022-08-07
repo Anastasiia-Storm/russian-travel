@@ -47,7 +47,7 @@
   align-items: center;
   justify-content: space-between;
 
-  max-width: 1184px;
+  max-width: 100%;
   min-height: 52px;
 
   padding: 28px 48px 0 48px;
@@ -102,7 +102,7 @@ border: 1px solid red;
   flex-direction: column;
 
   min-height: 1005px;
-  max-width: 984px; 
+  max-width: 100%; 
 
   padding: 56px 148px 0;
   border: 1px solid red;
@@ -164,7 +164,7 @@ border: 1px solid red;
 
   color: #FFFFFF;
 
-  max-width: 690px;
+  max-width: 100%;
   min-height: 429px;
 
   margin: 0;
@@ -237,7 +237,7 @@ border: 1px solid red;
 }
 
 .places {
-  max-width: 984px;
+  max-width: 100%;
   min-height: 3392px;
 
   padding: 92px 148px 0 148px;
@@ -362,7 +362,7 @@ border: 1px solid red;
 .cover {
   position: relative;
 
-  max-width: 1184px;
+  max-width: 100%;
   min-height: 740px;
 
   padding: 92px 48px;
@@ -441,7 +441,7 @@ border: 1px solid red;
   align-items: center;
   justify-content: space-between;
 
-  max-width: 1184px;
+  max-width: 100%;
   min-height: 18px;
 
   padding: 0 48px 24px 48px;
@@ -477,12 +477,12 @@ border: 1px solid red;
 
 @media screen and (max-width: 1024px) {
   .header {
-    max-width: 928px;
+    max-width: 100%;
     min-height: 52px;
   }
 
   .lead {
-    max-width: 928px;
+    max-width: 100%;
     min-height: 962px;
     
     padding: 48px 48px 0;
@@ -508,7 +508,7 @@ border: 1px solid red;
   }
 
   .places {
-    max-width: 928px;
+    max-width: 100%;
     min-height: 3292px;
    
     padding: 92px 48px 0 48px;
@@ -532,30 +532,37 @@ border: 1px solid red;
   }
 
   .cover {
-    max-width: 1024px;
+    max-width: 100%;
     min-height: 640px;
 
     padding: 92px 0 92px 0;
   }
 
-  .cover__title исправить
+  .cover__title {
+    margin: 195px 232px 0;
+
+  }
+
+  .cover__subtitle {
+    margin: 370px 332px;
+  }
 
   .footer {
-    max-width: 928px;
+    max-width: 100%;
     min-height: 18px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .header {
-    max-width: 720px;
+    max-width: 100%;
     min-height: 52px;
 
     padding: 28px 24px 0 24px;
   }
 
   .lead {
-    max-width: 768px;
+    max-width: 100%;
     min-height: 862px;
     
     padding: 48px 24px 0;
@@ -596,7 +603,7 @@ border: 1px solid red;
   }
 
   .places {
-    max-width: 720px;
+    max-width: 100%;
     min-height: 2808px;
 
     padding: 88px 24px 0 24px;
@@ -636,18 +643,28 @@ border: 1px solid red;
   }
 
   .cover {
-    max-width: 768px;
+    max-width: 100%;
     min-height: 480px;
 
     padding: 90px 0 88px 0;
   }
 
   .cover__title {
-    исправить
+    margin: 115px 104px 0;
+  }
+
+  .cover__subtitle {
+    margin: 299px 204px;
+  }
+
+
+  .cover__background {
+    width: 100%;
+    height: 480px;
   }
 
   .footer {
-    max-width: 720x;
+    max-width: 100%;
     min-height: 18px;
 
     padding: 0 24px 24px 24px;
@@ -656,7 +673,7 @@ border: 1px solid red;
 
 @media screen and (max-width: 320px) {
   .header {
-    max-width: 288px;
+    max-width: 100%;
     min-height: 42px;
 
     padding: 16px 16px 0 16px;
@@ -713,8 +730,8 @@ border: 1px solid red;
     font-size: 32px;
     line-height: 1.09;
 
-    width: 288;
-    height: 70;
+    width: 288px;
+    height: 70px;
   }
 
   .intro__text {
@@ -740,7 +757,7 @@ border: 1px solid red;
 
   .places {
     display: grid;
-    max-width: 320px;
+    max-width: 100%;
     min-height: 5177px;
 
     column-gap: 28px;
@@ -780,18 +797,40 @@ border: 1px solid red;
   }
 
   .cover {
-    max-width: 320px;
+    max-width: 100%;
     min-height: 200px;
 
     padding: 66px 0 64px 0;
   }
 
+  .cover__background {
+    width: 100%;
+    height: 200px;
+  }
+
+  
   .cover__title {
-    исправить
+    font-size: 32px;
+    line-height: 1.09;
+    
+    max-width: 288px;
+    min-height: 70px;
+
+    margin: 33px 16px 0;
+  }
+
+  .cover__subtitle {
+    font-size: 14px;
+    line-height: 1.14;
+    
+    max-width: 288px;
+    min-height: 48px;
+
+    margin: 119px 16px 0;
   }
   
   .footer {
-    max-width: 186x;
+    max-width: 100%;
     min-height: 310px;
 
     padding: 0 118px 24px 16px;
