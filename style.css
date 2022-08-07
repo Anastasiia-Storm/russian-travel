@@ -301,7 +301,7 @@ border: 1px solid red;
   border: 1px solid red;
 }
 
-.place__website__url-heading {
+.place__website_url-heading {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -316,7 +316,7 @@ border: 1px solid red;
   border: 1px solid red;
 }
 
-.place__website__link {
+.place__website_link {
   display: inline-block;
 
   font-style: normal;
@@ -333,7 +333,7 @@ border: 1px solid red;
   border: 1px solid red;
 }
 
-.place__website__link:hover {
+.place__website_link:hover {
   opacity: 0.8;
 }
 
@@ -475,85 +475,6 @@ border: 1px solid red;
   margin-left: auto;
   border: 1px solid red;
 } 
-
-
-@media screen and (max-width: 1100px) {
-  .header {
-    max-width: 100%;
-    min-height: 52px;
-  }
-
-  .lead {
-    max-width: 100%;
-    min-height: 962px;
-    
-    padding: 56px 100px 0 100px;
-  }
-
-  .lead__subtitle {
-    margin: 0 0 56px;
-  }
-
-  .intro {
-    padding: 92px 286px 92px 100px;
-  }
-
-  .photo-grid {
-    width: 928px;
-    height: 942px;
-  }
-
-  .photo-grid__item {
-    max-width: 300px;
-    min-height: 225px;
-  }
-
-  .places {
-    max-width: 100%;
-    min-height: 3292px;
-   
-    padding: 92px 120px 0 120px;
-  }
-
-  .place {
-    column-gap: 32px;
-    row-gap: 48px;
-
-    max-width: 928px;
-    min-height: 640px;
-  }
-
-  .place__title {
-    width: 440px;
-    height: 152px;
-  }
-
-  .paragraphs { 
-    width: 456px;
-  }
-
-  .cover {
-    max-width: 100%;
-    min-height: 640px;
-
-    padding: 92px 0 92px 0;
-  }
-
-  .cover__title {
-    margin: 195px 232px 0;
-
-  }
-
-  .cover__subtitle {
-    margin: 370px 332px;
-  }
-
-  .footer {
-    max-width: 100%;
-    min-height: 18px;
-  }
-}
-
 
 @media screen and (max-width: 1024px) {
   .header {
@@ -713,12 +634,12 @@ border: 1px solid red;
     width: 340px;
     height: 92px;
   }
-  .place__website__url-heading {
+  .place__website_url-heading {
     width: 352px;
     height: 12px;
   }
 
-  .place__website__link {
+  .place__website_link {
     width: 352px;
     height: 22px;
   }
@@ -884,12 +805,12 @@ border: 1px solid red;
     height: 35px;
   }
 
-  .place__website__url-heading {
+  .place__website_url-heading {
     width: 288px;
     height: 12px;
   }
 
-  .place__website__link {
+  .place__website_link {
     width: 288px;
     height: 22px;
   }
