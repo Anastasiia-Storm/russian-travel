@@ -140,6 +140,7 @@ border: 1px solid red;
 
 .lead__image {
   width: 100%;
+  height: 615px;
     border: 1px solid red;
 }
 
@@ -164,7 +165,7 @@ border: 1px solid red;
 
   color: #FFFFFF;
 
-  max-width: 100%;
+  max-width: 690px;
   min-height: 429px;
 
   margin: 0;
@@ -218,7 +219,6 @@ border: 1px solid red;
 
 .photo-grid {
   display: grid;
-  /* repeat(auto-fit, minmax(300px, max-content) */
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 16px;
@@ -232,7 +232,7 @@ border: 1px solid red;
 
 .photo-grid__item {
   max-width: 284px;
-  max-height: 213px;
+  min-height: 213px;
   border: 1px solid red;
 }
 
@@ -246,8 +246,9 @@ border: 1px solid red;
 
 .place {
   display: grid;
-  grid-template-columns: repeat(460px, 484px) min-content;
-  grid-template-rows: repeat(2. 330px) min-content;
+  /* grid-template-columns: repeat(460px, 484px); */
+  grid-template-columns: 460px 484px;
+  grid-template-rows: 152px 460px;
   column-gap: 40px;
   row-gap: 48px;
 
@@ -475,7 +476,8 @@ border: 1px solid red;
   border: 1px solid red;
 } 
 
-@media screen and (max-width: 1024px) {
+
+@media screen and (max-width: 1100px) {
   .header {
     max-width: 100%;
     min-height: 52px;
@@ -485,7 +487,7 @@ border: 1px solid red;
     max-width: 100%;
     min-height: 962px;
     
-    padding: 48px 48px 0;
+    padding: 56px 100px 0 100px;
   }
 
   .lead__subtitle {
@@ -493,11 +495,10 @@ border: 1px solid red;
   }
 
   .intro {
-    padding: 92px 286px 92px 48px;
+    padding: 92px 286px 92px 100px;
   }
 
   .photo-grid {
-    Надо дописать свойства мин макс и афто фит или фил
     width: 928px;
     height: 942px;
   }
@@ -511,7 +512,7 @@ border: 1px solid red;
     max-width: 100%;
     min-height: 3292px;
    
-    padding: 92px 48px 0 48px;
+    padding: 92px 120px 0 120px;
   }
 
   .place {
@@ -553,6 +554,82 @@ border: 1px solid red;
   }
 }
 
+
+@media screen and (max-width: 1024px) {
+  .header {
+    max-width: 100%;
+    min-height: 52px;
+  }
+
+  .lead {
+    max-width: 100%;
+    min-height: 962px;
+    
+    padding: 48px 48px 0;
+  }
+
+  .lead__subtitle {
+    margin: 0 0 56px;
+  }
+
+  .lead__image {
+    width: 100%;
+    height: 580px;
+  }
+
+  .intro {
+    padding: 92px 286px 92px 48px;
+  }
+
+  .photo-grid {
+    width: 928px;
+    height: 942px;
+  }
+
+  .photo-grid__item {
+    max-width: 300px;
+    min-height: 225px;
+  }
+
+  .places {
+    max-width: 100%;
+    min-height: 3292px;
+   
+    padding: 92px 48px 0 48px;
+  }
+
+  .place {
+    column-gap: 32px;
+    row-gap: 48px;
+
+    max-width: 928px;
+    min-height: 640px;
+  }
+
+  .place__title {
+    width: 440px;
+  }
+
+  .paragraphs { 
+    width: 456px;
+  }
+
+  .cover {
+    max-width: 100%;
+    min-height: 640px;
+
+    padding: 92px 0 92px 0;
+  }
+
+  .cover__title {
+    margin: 195px 232px 0;
+  }
+
+  .cover__subtitle {
+    margin: 370px 332px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .header {
     max-width: 100%;
@@ -565,20 +642,26 @@ border: 1px solid red;
     max-width: 100%;
     min-height: 862px;
     
-    padding: 48px 24px 0;
+    padding: 48px 0;
   }
 
   .lead__subtitle {
     margin: 0 0 56px;
   }
 
+  .lead__image {
+    height: 480px;
+  }
+
   .intro {
+    min-height: 429px;
+
     padding: 88px 24px 88px 24px;
   }
 
   .intro__title {
-    width: 720;
-    height: 58;
+    width: 720px;
+    height: 58px;
   }
 
   .intro__text {
@@ -592,9 +675,15 @@ border: 1px solid red;
   }
 
   .photo-grid {
-    Надо дописать свойства мин макс и афто фит или фил
+    min-height: 1664px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+
     max-width: 720px;
     min-height: 1664px;
+
+    margin: 0 16px 0;
+    padding: 0;
   }
 
   .photo-grid__item {
@@ -667,7 +756,7 @@ border: 1px solid red;
     max-width: 100%;
     min-height: 18px;
 
-    padding: 0 24px 24px 24px;
+    padding: 0 24px 24px;
   }
 }
 
@@ -695,7 +784,6 @@ border: 1px solid red;
   }
 
   .lead {
-    max-width: 320px;
     min-height: 406px;
     
     padding: 48px 2px 0;
@@ -722,7 +810,14 @@ border: 1px solid red;
     margin: 0 0 40px;
   }
 
+  .lead__image {
+    height: 200px;
+  }
+
   .intro {
+    max-width: 100%;
+    height: 754px;
+
     padding: 64px 16px 64px 16px;
   }
 
@@ -730,7 +825,7 @@ border: 1px solid red;
     font-size: 32px;
     line-height: 1.09;
 
-    width: 288px;
+    max-width: 288px;
     height: 70px;
   }
 
@@ -745,9 +840,14 @@ border: 1px solid red;
   }
 
   .photo-grid {
-    Надо дописать свойства мин макс и афто фит или фил
+    grid-template-rows: repeat(11, 1fr);
+    grid-template-columns: auto;
+    row-gap: 12px;
+    
     max-width: 288px;
     min-height: 2724px;
+
+    padding: 0 16px 0 16px;
   }
 
   .photo-grid__item {
@@ -766,6 +866,12 @@ border: 1px solid red;
   }
 
   .place {
+    display: grid;
+    grid-template-columns: 460px 484px;
+    grid-template-rows: 152px 460px;
+    column-gap: 40px;
+    row-gap: 48px;
+  
     max-width: 320px;
     min-height: 1042px;
   }
