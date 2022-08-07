@@ -13,3 +13,10 @@
   margin: auto 0 auto 18px;
   border: 1px solid red;
 }
+
+@media screen and (max-width: 320px) {
+  .header__lang-link-en {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+}

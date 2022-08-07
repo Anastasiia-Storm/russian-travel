@@ -9,25 +9,52 @@
 }
 
 .cover::before {
-    content: "";
-    position: absolute;
+  content: "";
+  position: absolute;
   
-    opacity: 0.3;
+  opacity: 0.3;
+  
+  background: #2A2C2F;
+  
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+ /* От 1024px до бесконечности */
+@media screen and (min-width: 1024px) {
+/* Стили для hover нужны только для desktop */
+  .cover:hover::before {
+    opacity: 0.8;
   
     background: #2A2C2F;
-  
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
   }
-    /* От 1024px до бесконечности */
-  @media screen and (min-width: 1024px) {
-    /* Стили для hover нужны только для desktop */
-    .cover:hover::before {
-      opacity: 0.8;
+}
   
-      background: #2A2C2F;
-    }
+
+@media screen and (max-width: 1024px) {
+  .cover {
+    max-width: 100%;
+    min-height: 640px;
+  
+    padding: 92px 0 92px 0;
   }
-  
+}
+
+@media screen and (max-width: 768px) {
+  .cover {
+    max-width: 100%;
+    min-height: 480px;
+
+    padding: 90px 0 88px 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cover {
+    max-width: 100%;
+    min-height: 200px;
+
+    padding: 66px 0 64px 0;
+  }
+}

@@ -14,3 +14,27 @@
   margin: 429px 412px;
   border: 1px solid red;
 }
+
+@media screen and (max-width: 1024px) {
+  .cover__subtitle {
+    margin: 370px 332px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cover__subtitle {
+    margin: 299px 204px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cover__subtitle {
+    font-size: 14px;
+    line-height: 1.14;
+    
+    max-width: 288px;
+    min-height: 48px;
+
+    margin: 119px 16px 0;
+  }
+}
