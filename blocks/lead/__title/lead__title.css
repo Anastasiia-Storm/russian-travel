@@ -10,7 +10,7 @@
   height: 200px; 
   
   margin: 0 0 32px;
-  border: 1px solid red; 
+  /* border: 1px solid red; */ 
 }
 
 @media screen and (max-width: 320px) {
@@ -22,7 +22,7 @@
     height: 88px; 
   
     margin: 0 0 16px;
-    border: 1px solid red; 
+    /* border: 1px solid red; */ 
   }
 }
   

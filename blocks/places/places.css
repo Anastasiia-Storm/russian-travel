@@ -3,7 +3,7 @@
   min-height: 3392px;
   
   padding: 92px 148px 0 148px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 @media screen and (max-width: 1024px) {

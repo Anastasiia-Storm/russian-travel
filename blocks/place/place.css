@@ -9,7 +9,7 @@
   min-height: 660px;
   
   margin: 0 auto 80px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 .place:last-child {
