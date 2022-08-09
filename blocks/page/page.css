@@ -1,6 +1,8 @@
 .body {
-  margin: 0;
-  padding: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
   /* border: 1px solid red; */
 }
 
@@ -13,7 +15,7 @@
   max-width: 1280px;
   min-height: 6875px;
   
-  margin: 0 auto;
+  margin: 0;
   
   /*Сглаживание шрифтов*/
   -webkit-font-smoothing: antialiased;

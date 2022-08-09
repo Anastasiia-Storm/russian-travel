@@ -3,8 +3,15 @@
   grid-row: 1;
   
   width: 456px;
-  height: 46px;
+  min-height: 46px;
   
   margin: 106px 0 0;
   /* border: 1px solid red; */
+}
+
+@media screen and (max-width: 768px) {
+  .place__website {
+    width: 352px;
+    margin: 46px 0 0 0;
+  }
 }

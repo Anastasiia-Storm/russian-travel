@@ -9,7 +9,7 @@
   grid-row: 1;
   
   width: 460px;
-  height: 152px;
+  min-height: 152px;
   
   margin: 0;
   /* border: 1px solid red; */
@@ -28,7 +28,7 @@
     line-height: 1.09;
 
     width: 340px;
-    height: 92px;
+    min-height: 92px;
   }
 }
 
@@ -37,7 +37,9 @@
     font-size: 32px;
     line-height: 1.09;
 
-    width: 288px;
-    height: 35px;
+    max-width: 288px;
+    min-height: 35px;
+
+    padding: 0 16px 0 16px;
   }
 }

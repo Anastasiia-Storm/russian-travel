@@ -5,7 +5,7 @@
   gap: 16px;
   
   width: 1184px;
-  height: 671px;
+  min-height: 671px;
   
   padding: 0 48px 0 48px;
   /* border: 1px solid red; */
@@ -14,7 +14,7 @@
 @media screen and (max-width: 1024px) {
   .photo-grid {
     width: 928px;
-    height: 942px;
+    min-height: 942px;
   }
 }
 

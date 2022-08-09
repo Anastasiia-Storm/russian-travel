@@ -4,6 +4,13 @@
   font-weight: 400;
   src: url(../vendor/fonts/Inter-Regular.woff) format('woff');
 }
+
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url(../vendor/fonts/Inter-SemiBold.woff) format('woff');
+}
   
 @font-face {
   font-family: 'Inter';
