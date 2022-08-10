@@ -3,7 +3,7 @@
   
   color: #FFFFFF;
   
-  max-width: 690px;
+  max-width: 100%;
   min-height: 429px;
   
   margin: 0;
@@ -20,6 +20,7 @@
 @media screen and (max-width: 768px) {
   .intro {
     min-height: 429px;
+    max-width: 720px;
 
     padding: 88px 24px 88px 24px;
   }
