@@ -1,5 +1,5 @@
 .cover__background {
-  /* display: flex; */
+  display: flex;
   position: absolute;
 
   background-size: cover;
@@ -12,17 +12,21 @@
   margin: 0;
   /* border: 1px solid red; */ 
 }
-  
+
+@media screen and (max-width: 1024px) {
+  .cover__background {
+    min-height: 640px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .cover__background {
-    width: 100%;
     min-height: 480px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .cover__background {
-    width: 100%;
     min-height: 200px;
   }
 }

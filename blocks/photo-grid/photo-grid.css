@@ -16,8 +16,7 @@
   .photo-grid {
     min-height: 942px;
 
-    margin: auto;
-    padding: 0;
+    padding: 0 48px 0 48px;
   }
 }
 
@@ -25,8 +24,7 @@
   .photo-grid {
     min-height: 1664px;
 
-    margin: 0 16px 0;
-    padding: 0;
+    padding: 0 24px 0 24px;
   }
 }
 
@@ -34,6 +32,6 @@
   .photo-grid {
     min-height: 2724px;
 
-    margin: 0;
+    padding: 0 16px 0 16px;
   }
 }

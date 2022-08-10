@@ -1,32 +1,14 @@
 .place__link {
-    display: inline-block;
-    
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.22;
-    text-decoration-line: underline;
-    color: #FFFFFF;
-    
-    width: 100%;
-    min-height: 22px;
-    
-    padding: 12px 0 0;
-    /* border: 1px solid red; */
-  }
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 122%;
+    /* identical to box height, or 122% */
+  text-decoration-line: underline;
+  color: #ffffff;
+}
   
-  .place__link:hover {
-    opacity: 0.8;
-  }
-  
-  @media screen and (max-width: 768px) {
-    .place__link {
-      min-height: 22px;
-    }
-  }
-  
-  @media screen and (max-width: 320px) {
-    .place__link {
-      min-height: 22px;
-    }
-  }
+.place__link:hover {
+  opacity: 0.8;
+}

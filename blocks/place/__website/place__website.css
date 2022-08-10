@@ -1,16 +1,27 @@
 .place__website {
-  grid-column: 2;
-  grid-row: 1;
-  
-  width: 100%;
-  min-height: 46px;
-  
-  margin: 106px 0 0;
-  /* border: 1px solid red; */
+  max-width: 456px;
+  padding-bottom: 48px;
+  margin-top: auto;
+  flex-basis: 50%;
+
+  margin-left: 32px;
 }
 
 @media screen and (max-width: 768px) {
   .place__website {
-    margin: 46px 0 0 0;
+    max-width: 352px;
+    margin-left: 28px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .place__website {
+    padding-bottom: 0;
+    max-width: 288px;
+    
+    margin-bottom: 32px;
+    margin-top: 0;
+    margin-left: 16px;
+
   }
 }
