@@ -4,24 +4,22 @@
   margin-top: auto;
   flex-basis: 50%;
 
-  margin-left: 32px;
+  margin-left: 0;
 }
 
 @media screen and (max-width: 768px) {
   .place__website {
     max-width: 352px;
-    margin-left: 28px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .place__website {
     padding-bottom: 0;
-    max-width: 288px;
+    /* max-width: 288px; */
     
+    padding-left: 16px;
     margin-bottom: 32px;
-    margin-top: 0;
-    margin-left: 16px;
-
+    margin-left: 0;
   }
 }
