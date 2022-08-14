@@ -6,7 +6,6 @@
 
   box-sizing: border-box;
   
-  min-height: 671px;
   width: 100%;
   padding: 0 48px 0 48px;
   /* border: 1px solid red; */
@@ -14,24 +13,18 @@
 
 @media screen and (max-width: 1024px) {
   .photo-grid {
-    min-height: 942px;
-
     padding: 0 48px 0 48px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .photo-grid {
-    min-height: 1664px;
-
     padding: 0 24px 0 24px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .photo-grid {
-    min-height: 2724px;
-
     padding: 0 16px 0 16px;
   }
 }
