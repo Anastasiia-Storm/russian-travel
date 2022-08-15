@@ -1,5 +1,5 @@
 .cover__background {
-  display: flex;
+  /* display: flex; */
   position: absolute;
 
   background-size: cover;
@@ -9,9 +9,35 @@
   
   width: 100%;
   min-height: 740px;
-  margin: 0;
+  margin-top: 0;
+  top: 0;
   /* border: 1px solid red; */ 
 }
+
+.cover__background::before {
+  content: "";
+  position: absolute;
+  
+  opacity: 0.3;
+  
+  background: #2A2C2F;
+  
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+ /* От 1024px до бесконечности */
+@media screen and (min-width: 1024px) {
+/* Стили для hover нужны только для desktop */
+  .cover__background:hover::before {
+    opacity: 0.8;
+  
+    background: #2A2C2F;
+  }
+}
+  
 
 @media screen and (max-width: 1024px) {
   .cover__background {

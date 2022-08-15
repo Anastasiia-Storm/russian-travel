@@ -12,30 +12,6 @@
   /* border: 1px solid red; */
 }
 
-.cover::before {
-  content: "";
-  position: absolute;
-  
-  opacity: 0.3;
-  
-  background: #2A2C2F;
-  
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
-}
- /* От 1024px до бесконечности */
-@media screen and (min-width: 1024px) {
-/* Стили для hover нужны только для desktop */
-  .cover:hover::before {
-    opacity: 0.8;
-  
-    background: #2A2C2F;
-  }
-}
-  
 @media screen and (max-width: 1024px) {
   .cover {
     min-height: 640px;
