@@ -1,24 +1,31 @@
 .places {
-  margin: 0 auto;
-  padding: 92px 148px 92px 148px;
+  max-width: 100%;
+  min-height: 3392px;
+  
+  padding: 92px 148px 0 148px;
+  /* border: 1px solid red; */
 }
-
-
 
 @media screen and (max-width: 1024px) {
   .places {
-    padding: 92px 48px 92px 48px;
+    min-height: 3292px;
+/*    
+    padding: 92px 48px 0 48px; */
   }
 }
 
 @media screen and (max-width: 768px) {
   .places {
-    padding: 88px 24px 90px 24px;
+    min-height: 2808px;
+
+    /* padding: 88px 24px 0 24px; */
   }
 }
 
 @media screen and (max-width: 320px) {
   .places {
-    padding: 64px 0 66px 0;
+    min-height: 5177px;
+
+    /* padding: 64px 0 0 0; */
   }
 }
