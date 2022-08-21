@@ -3,7 +3,7 @@
   grid-column: 1;
   grid-row: 2;
   
-  width: 100%;
+  width: 460px;
   
   margin: 0;
   /* border: 1px solid red; */
@@ -12,12 +12,16 @@
 @media screen and (max-width: 1024px) {
   .place__image {
     min-height: 440px;
+
+    width: 440px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .place__image {
     min-height: 340px;
+
+    width: 340px;
   }
 }
 
