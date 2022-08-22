@@ -1,14 +1,12 @@
 .place { 
   display: grid;
-  /* grid-template-columns: minmax(min-content, min-content) 1fr; */
-  grid-template-columns: min-content;
-  grid-template-rows: min-content;
+  grid-template-columns: min-content min-content;
+  grid-template-rows: min-content min-content;
 
   column-gap: 40px;
   row-gap: 48px;
   
   width: 100%;
-  /* min-height: 660px; */
   height: min-content;
   margin: 0 auto;
   padding-bottom: 80px; 

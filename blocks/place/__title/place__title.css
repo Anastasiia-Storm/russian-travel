@@ -5,11 +5,8 @@
   line-height: 1.05;
   color: #FFFFFF;
   
-  grid-column: 1;
-  grid-row: 1;
-  
   width: 100%;
-  height: 152px;
+  min-height: 152px;
   
   margin: 0;
   /* border: 1px solid red; */
