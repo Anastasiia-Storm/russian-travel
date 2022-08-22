@@ -4,6 +4,7 @@
   font-size: 72px;
   line-height: 1.05;
   color: #FFFFFF;
+  align-self: end;
   
   width: 100%;
   min-height: 152px;
@@ -11,12 +12,6 @@
   margin: 0;
   /* border: 1px solid red; */
 }
-
-@media screen and (max-width: 1024px) {
-  .place__title {
-  }
-}
-
 
 @media screen and (max-width: 768px) {
   .place__title {
@@ -29,6 +24,7 @@
 
 @media screen and (max-width: 320px) {
   .place__title {
+    box-sizing: border-box;
     font-size: 32px;
     line-height: 1.09;
 

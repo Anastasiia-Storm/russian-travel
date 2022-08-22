@@ -1,7 +1,7 @@
 .place { 
   display: grid;
-  grid-template-columns: min-content min-content;
-  grid-template-rows: min-content min-content;
+  grid-template-columns: 0.95fr 1fr;
+  grid-template-rows: min-content 1fr;
 
   column-gap: 40px;
   row-gap: 48px;
