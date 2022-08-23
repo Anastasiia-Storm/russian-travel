@@ -33,10 +33,10 @@
   }
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 465px) {
   .lead__title {
     width: 319px;
-    font-size: 40px;
+    font-size: 45px;
   }
 }
 
