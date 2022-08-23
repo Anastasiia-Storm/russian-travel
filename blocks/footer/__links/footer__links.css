@@ -6,6 +6,17 @@
   padding: 0;
 }
 
+
+@media screen and (max-width: 525px) {
+  .footer__links {
+    flex-direction: column;
+
+    margin: 0;
+  }
+}
+    
+
+
 @media screen and (max-width: 320px) {
   .footer__links {
     flex-direction: column;

@@ -24,7 +24,29 @@
 
 @media screen and (max-width: 768px) {
   .cover__title {
-    margin: 115px 104px 0;
+    margin: 115px auto 0;
+  }
+}
+
+@media screen and (max-width: 734px) {
+  .cover__title {
+    /* margin: 50px 115px 50px 0; */
+    font-size: 70px;
+    width: 500px;
+  }
+}
+ 
+/* @media screen and (max-width: 478px) { 
+  .cover__title {
+    width: 319px;
+    font-size: 40px;
+  }
+} */
+
+@media screen and (max-width: 514px) {
+  .cover__title {
+    font-size: 55px;
+    width: 450px;
   }
 }
 
@@ -35,6 +57,6 @@
     
     max-width: 288px;
 
-    margin: 33px 16px 0;
+    margin: 33px auto 0;
   }
 }
