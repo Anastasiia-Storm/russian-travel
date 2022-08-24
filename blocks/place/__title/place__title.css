@@ -7,7 +7,6 @@
   align-self: end;
   
   width: 100%;
-  min-height: 152px;
   
   margin: 0;
   /* border: 1px solid red; */
@@ -17,8 +16,6 @@
   .place__title {
     font-size: 42px;
     line-height: 1.09;
-
-    min-height: 92px;
   }
 }
 
@@ -27,8 +24,6 @@
     box-sizing: border-box;
     font-size: 32px;
     line-height: 1.09;
-
-    min-height: 35px;
 
     padding: 0 16px 0 16px;
   }

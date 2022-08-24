@@ -9,7 +9,6 @@
   color: #FFFFFF;
   
   width: 100%;
-  min-height: 22px;
   
   padding: 12px 0 0;
   /* border: 1px solid red; */
@@ -17,16 +16,4 @@
 
 .place__link:hover {
   opacity: 0.8;
-}
-
-@media screen and (max-width: 768px) {
-  .place__link {
-    min-height: 22px;
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .place__link {
-    min-height: 22px;
-  }
 }
