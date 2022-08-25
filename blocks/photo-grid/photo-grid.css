@@ -12,12 +12,6 @@
   /* border: 1px solid red; */
 }
 
-@media screen and (max-width: 1024px) {
-  .photo-grid {
-    padding: 0 48px 0 48px;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .photo-grid {
     padding: 0 24px 0 24px;

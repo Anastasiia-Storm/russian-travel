@@ -27,10 +27,10 @@
 }
   
   @media screen and (max-width: 320px) {
-    .place__paragraph {
-      box-sizing: border-box;
+  .place__paragraph {
+    box-sizing: border-box;
 
-      padding: 0 16px 0 16px;
-      padding-bottom: 25px;
-    }
+    padding-left: 16px;
+    padding-right: 16px;
   }
+}

@@ -5,34 +5,20 @@
   justify-content: space-between;
   
   max-width: 100%;
-  min-height: 52px;
-  
+ 
   margin: 0 auto;
   padding: 28px 48px 0 48px;
   /* border: 1px solid red; */
 }
-  
-@media screen and (max-width: 1024px) {
-  .header {
-    max-width: 100%;
-    min-height: 52px;
-  }
-}
 
 @media screen and (max-width: 768px) {
   .header {
-    max-width: 100%;
-    min-height: 52px;
-
     padding: 28px 24px 0 24px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .header {
-    max-width: 100%;
-    min-height: 42px;
-
     padding: 16px 16px 0 16px;
   }
 }
