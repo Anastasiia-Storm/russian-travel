@@ -6,9 +6,21 @@
   /* border: 1px solid red; */
 }
 
+@media screen and (max-width: 1150px) {
+  .places {
+    padding: 0 100px 0 100px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .places {
     padding: 0 48px 0 48px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .places {
+    padding: 0 30px 0 30px;
   }
 }
 

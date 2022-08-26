@@ -12,6 +12,13 @@
   /* border: 1px solid red; */
 }
 
+@media screen and (max-width: 855px) {
+  .place__title {
+    font-size: 52px;
+  }
+}
+
+
 @media screen and (max-width: 768px) {
   .place__title {
     font-size: 42px;
