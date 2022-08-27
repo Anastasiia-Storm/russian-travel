@@ -12,3 +12,9 @@
   margin: 0 0 33px;
   /* border: 1px solid red; */
 }
+
+@media screen and (max-width: 320px) {
+  .intro .intro__text {
+    margin: 0 0 34px;
+  }
+}

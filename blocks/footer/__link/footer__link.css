@@ -17,7 +17,7 @@
   transition: opasity .6s linear;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .footer__link {
     margin-right: 18px;
   }

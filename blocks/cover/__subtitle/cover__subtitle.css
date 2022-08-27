@@ -16,7 +16,7 @@
   /* border: 1px solid red; */
 }
 
-@media screen and (max-width: 388px) { 
+@media screen and (max-width: 400px) { 
   .cover__subtitle {
     max-width: 319px;
     font-size: 16px;
@@ -29,11 +29,8 @@
   .cover__subtitle {
     font-size: 14px;
     line-height: 1.14;
-    
   
-    max-width: 288px;
-    box-sizing: border-box;
-    padding: 0 16px 0 16px;
+    max-width: 273px;
     margin: 16px 0 0 0;
   }
 }

@@ -24,14 +24,13 @@
     font-size: 42px;
     line-height: 1.09;
 
-    max-width: 340px;
-    box-sizing: border-box;
-    padding-right: 10px;
+    max-width: 330px;
   }
 }
 
 @media screen and (max-width: 320px) {
   .place__title {
+    box-sizing: border-box;
     font-size: 32px;
 
     padding: 0 16px 0 16px;
